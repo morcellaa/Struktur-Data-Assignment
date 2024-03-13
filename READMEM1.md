@@ -75,11 +75,7 @@ int main()
 ### 2. Tipe Data Abstrak
 Tipe data abstrak (ADT) dapat didefinisikan sebagai model matematika dari objek data yang menyempurnakan tipe data dengan cara mengaitkannya dengan fungsi-fungsi yang beroprasi pada data yang bersangkutan. ADT merupakan koleksi data dan operasi yang dapat digunakan untuk memanipulasi data tersebut
 
-Dalam C++, ADT dapat dibuat dalam sebuah Class. Class dalam C++ merupakan pengembangan dari struct dalam bahasa pemrograman C. Class memiliki data dan fungsi. Data dan fungsi yang
-dideklarasi private tidak dapat diakses secara langsung
-oleh client, sementara data dan fungsi yang dideklarasi
-public akan bersifat publik dan dapat diakses oleh client
-secara langsung.
+Dalam C++, ADT dapat dibuat dalam sebuah Class. Class dalam C++ merupakan pengembangan dari struct dalam bahasa pemrograman C++. Class memiliki data dan fungsi. Data dan fungsi yangdideklarasi private tidak dapat diakses secara langsung oleh client, sementara data dan fungsi yang dideklarasi public akan bersifat publik dan dapat diakses oleh client secara langsung.
 
 ```C++
 #include <stdio.h>
@@ -111,8 +107,6 @@ int main()
     printf("Umur: %d\n", mhs2.age);
     return 0;
 }
-
-
 ```
 
 ### 3. Tipe Data Koleksi
@@ -128,7 +122,9 @@ int nama_array[10];
 int nama_arr[3] = {0, 3, 2}
 ```
 b. Vector : Vector merupakan bagian dari Standard Template Library (STL). Vector adalah Array dinamis, yakni array yang proses memungkinkan proses insert dan delete element pada bagian tengah array dan “seakan-akan” mengubah ukuran array tersebut.vector juga menyimpan elemen-elemen secara bersebelahan dan elemen tesebut dapat diakses sesuai subscript/index. Vector umumnya digunakan pemrogram karena alasan fleksibilitas (dalam hal ukuran) dan kecepatannya. Vector pada C/C++ juga dilengkapi dengan fitur-fitur pelengkap seperti element access, iterators, capacity, modifiers
-
+```C++
+std::vector<T> vector_name;
+```
 c. Map : Map terasa mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
 
 Contoh Program Tipe Data Koleksi
@@ -201,13 +197,14 @@ Program tersebut adalah sebulah program C++ yang dibuat untuk menentukan kelulus
 Dalam bahasa pemrograman C++, terdapat dua jenis tipe data yang umum digunakan yaitu tipe data primitif dan bukan primitif. Tipe data primitif digunakan untuk menyimpan data yang sederhana dan tidak kompleks seperti bilangan bulat, bilangan pecahan, karakter, dan nilai boolean. Oleh karena itu, pemahaman yang kuat tentang tipe data primitif adalah kunci untuk mengembangkan perangkat lunak yang efisien, aman, dan mudah dipahami.
 
 #### Output:
-![240302_00h00m06s_screenshot](2020-11-01 (05).png)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/cf736d8e-9488-4711-82ba-9913f3615d85)
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/5c671d7e-97f7-4b20-994d-b8b43e209e6c)
 
 
 ### 2.	Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya.
+
 a.  class adalah struktur data yang defaultnya itu private, jika objek anggota dari class ingin dipublikasikan, maka harus menggunakan (public. Class pada Swift merupakan reference type. Selama sebuah class tidak dinisialisasikan ulang, walaupun variabelnya berbeda, isi dari class tersebut saling berhubungan. Berikut adalah contoh programnya:
 ```C++
 #include <iostream>
@@ -241,10 +238,10 @@ int main() {
 }
 ```
 #### Output:
-![240302_00h00m06s_screenshot](2020-11-01 (05).png)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/40f0f205-0f27-4a00-96ab-708238f8ef29)
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/593a567a-f03d-44df-abe5-51a5b0107c90)
 
 b. Struct atau structure merupakan tipe data yang menyimpan beberapa data dengan default public, struct bermanfaat untuk mengelompokkan sejumlah data dengan tipe yang berlainan. Struct pada Swift adalah value type. Setiap data pada struct apabila dipindahkan ke variabel lain, maka setiap data yang tersimpan bisa berbeda dengan variabel lain.
 
@@ -275,10 +272,10 @@ int main() {
 
 ```
 #### Output:
-![240302_00h00m06s_screenshot](2020-11-01 (05).png)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/e658a0be-4694-41f2-b23c-edc5cef64f53)
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/714da697-d25e-466f-b38f-910ef4c67872)
 
 ### 3.	Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map.
 Perintah map mempermudah kita menjalankan sebuah fungsi terhadap banyak nilai masukan sekaligus. Perintah map menerima argumen berupa sebuah fungsi dan iterable (list,tuple,dst) . Perintah map memproses seluruh isi dari iterable yang diberikan satu demi satu dan meletakkan hasilnya pada sebuah map object. Map object dimaksud kemudian akan menjadi keluaran perintah map bersangkutan, yang selanjutnya dapat dikonversi kedalam bentuk list dengan perintah list(), set dengan perintah set(), dan seterusnya. Berikut adalah contoh program yang menggunakan fungsi map untuk menghitung frekuensi kemunculan setiap karakter dalam sebuah string:
@@ -313,10 +310,10 @@ int main() {
 
 ```
 #### Output:
-![240302_00h00m06s_screenshot](2020-11-01 (05).png)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/bd51ca9b-71be-48ea-a847-4bc31eb0a975) 
 
 #### Full code Screenshot:
-![240309_10h21m35s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/41e9641c-ad4e-4e50-9ca4-a0215e336b04)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/fc78c4ad-9997-4940-8ca4-7fefbb548a24)
 
 ## Kesimpulan
 
