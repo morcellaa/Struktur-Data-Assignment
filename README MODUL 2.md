@@ -1,4 +1,4 @@
-![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/e059827b-5e96-46d4-a154-899ec1ac594f)![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/65ad466a-2157-45a8-9209-e3b5c27aaf89)# <h1 align="center">Laporan Praktikum Modul Array</h1>
+)# <h1 align="center">Laporan Praktikum Modul Array</h1>
 <p align="center">Lailatur Rahmah</p>
 
 ## Dasar Teori
