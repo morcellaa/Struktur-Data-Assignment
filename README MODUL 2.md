@@ -1,4 +1,4 @@
-)# <h1 align="center">Laporan Praktikum Modul Array</h1>
+<h1 align="center">Laporan Praktikum Modul Array</h1>
 <p align="center">Lailatur Rahmah</p>
 
 ## Dasar Teori
@@ -25,18 +25,18 @@ nama_var : nama variabel array
 
 ukuran : untuk menyatakan jumlah maksimal elemen array
 
-Contoh pendeklarasian array : 
+##### Contoh pendeklarasian array : 
 ```C++
 float nilai_tes[5];
 ```
-Mengakses Elemen Array Berdimensi Satu
+##### Mengakses Elemen Array Berdimensi Satu
 
 Pada C, data array akan disimpan dalam memori yang berurutan. Elemen pertama
 mempunyai indeks bernilai 0. Jika variabel nilai_tes dideklarasikan sebagai array dengan
 5 elemen, maka elemen pertama memiliki indeks sama dengan 0, dan elemen terakhir
 memiliki indeks 4. 
 
-Inisialisasi Array Berdimensi Satu 
+##### Inisialisasi Array Berdimensi Satu 
 
 Sebuah array dapat diinisialisasi sekaligus pada saat dideklarasikan. Untuk
 mendeklarasikan array, nilai-nilai yang diinisialisasikan dituliskan di antara kurung
@@ -65,7 +65,7 @@ kedua] :
 merupakan instruksi untuk memberikan nilai 540 ke array data_lulus untuk indeks
 pertama = 0 dan indeks kedua bernilai 1.
 
-(2) printf(“%d”,data_lulus[2][0]);
+(2) printf(“d”,data_lulus[2][0]);
 merupakan perintah untuk menampilkan elemen yang memiliki indeks pertama = 2 dan
 indeks kedua = 0.
 Perhatikan contoh potongan program di bawah ini. 
@@ -126,6 +126,8 @@ int data_huruf [2][8][8] =
 
 ### 1. Program Input Array Tiga Dimensi
 
+Berikut merupakan program yang digunakan untuk menginputkan elemen-elemen array tiga dimensi. Pada awalnya, program mendeklarasikan sebuah array tiga dimensi dengan ukuran 2x3x3. Lalu, program meminta pengguna untuk memasukkan elemen-elemen array menggunakan tiga perulangan. Setiap elemen array diinputkan sesuai dengan indeksnyaSetelah semua elemen dimasukkan, program menampilkan elemen-elemen array dengan menunjukkan indeksnya, dan kemudian menampilkan tampilan array tanpa struktur dimensinya.  
+
 ```C++
 #include <iostream>
 
@@ -181,6 +183,7 @@ int main()
 ![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/6d53de4d-bec6-4c8c-acad-c086dde07876)
 
 ### 2. Program Mencari Nilai Maksimal pada Array 
+Berikut merupakan sebuah program sederhana yang bertujuan untuk mencari nilai maksimum dalam sebuah array yang diinputkan oleh pengguna. Pertama-tama, pengguna diminta untuk memasukkan panjang array yang diinginkan. Selanjutnya, program menggunakan perulangan for untuk mencari nilai maksimum dalam array dengan membandingkan setiap elemen dengan nilai maksimum yang disimpan. Program mencetak nilai maksimum beserta lokasi indeksnya di dalam array.
 
 ```C++
 #include <iostream> 
@@ -218,7 +221,7 @@ int main() {
 
 ### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user! 
 
-![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/bb267499-c690-441e-953d-155591a52394)
+![image](https://github.com/morcellaa/Struktur-Data-Assignment/assets/162486799/e0bdd9d3-7584-4d62-bee3-f6a21691bd0d)
 
 ```C++
 #include <iostream>
@@ -395,4 +398,5 @@ Apabila kita akan membuat program untuk menyimpan sekumpulan data, misalnya data
 
 ## Referensi
 [1] Piero, Diego and Murni, Dewi. Menentukan Determinan Matriks Persegi Panjang Menggunakan Bahasa C++. Padang; 2021.
+
 [2] Firliana, Rina and Kasih, Patmi. Algoritma dan Pemrograman C++. Adjie Media Nusantara, Nganjuk; 2018.
